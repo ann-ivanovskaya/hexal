@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Maven+Pro');
+body{
+    width: 1020px;
+    margin: auto;
+}
+/*
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Maven Pro Regular'), local('MavenPro-Regular'), url(https://fonts.gstatic.com/s/mavenpro/v11/7Au9p_AqnyWWAxW2Wk3GzWQIElsO0w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }*/
+
+  @font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "MavenProRegular";
+    src: url("./assets/maven-pro.regular.ttf");
+}
+@font-face {
+    font-family: "Lato-Black";
+    src: url("./assets/Lato-Black.ttf");
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("./assets/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("./assets/MyriadPro-Regular.ttf");
+}
+         
+  *{
+      margin: 0px;
+      border: 0px;
+  }
+nav {
+    background-color: #323232;
+    width: 1020px;
+    height: 63px;
+    position: fixed;
+    z-index: 1;
+}
+h1{
+    display: none;
+}
+nav a{
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 7.21379pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: justify;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+nav a:hover{
+    color: rgba(46, 179, 152, 255);    
+}
+#left{
+    line-height: 63px;
+    position: relative;
+    left: 326px;
+}
+#right{
+    line-height: 63px; 
+    position: relative;
+    top: -63px;
+    left: 580px;  
+}
+#arrow{
+    position: absolute;
+    left: 478px;
+    top: 8px;
+}
+#triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 46px 0 46px;
+    border-color: #323232 transparent transparent transparent;
+    position: absolute;
+    top: 63px;
+    left: 464px;
+}
+#portfolio{
+    width: 1020px;
+    height: 721px;
+    position: relative;
+    top: 63px;
+    padding-bottom: 75px;
+}
+hr{
+    border: 1px;
+    color: #e4e9eb;
+}
+#line1{
+    position: absolute;
+    top: 74px;
+    left: 30px;
+}
+.hexagon{
+   width: 180px;
+   height: 210px;
+   transform: rotate(120deg);
+   overflow: hidden;
+   visibility: hidden;
+   display: inline-block;
+   margin-right: 18px;
+}
+.layer-1{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: hidden;
+}
+.layer-2{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+#row1{
+    position: relative;
+    top: 89px;
+    left: 119px;
+}
+#row2{
+    position: relative;
+    top: 50px;
+    left: 18px;
+}
+#row3{
+    position: relative;
+    top: 12px;
+    left: 119px;
+}
+#a1{
+    background-image: url(./assets/Layer\ 33@1X.png);    
+}
+#a2{
+    background-image: url(./assets/Layer\ 31@1X.png);
+}
+#a3{
+    background-image: url(./assets/Layer\ 34@1X.png);
+}
+#a4{
+    background-image: url(./assets/Layer\ 35@1X.png);
+}
+#a5{
+    background-image: url(./assets/Layer\ 36@1X.png);
+}
+#a6{
+    background-image: url(./assets/Layer\ 44@1X.png);
+}
+#a7{
+    background-image: url(./assets/Layer\ 37@1X.png);
+}
+#a8{
+    background-image: url(./assets/Layer\ 38@1X.png);
+}
+#a9{
+    background-image: url(./assets/Layer\ 39@1X.png);
+}
+#a10{
+    background-image: url(./assets/Layer\ 40@1X.png);
+}
+#a11{
+    background-image: url(./assets/Layer\ 41@1X.png);
+}
+#a12{
+    background-image: url(./assets/Layer\ 43@1X.png);
+}
+#a13{
+    background-image: url(./assets/Layer\ 42@1X.png);
+}
+#author{
+    background-image: url(./assets/Image@1x.png);
+}
+#author-container{
+    position: relative;
+    top: 68px;
+    left: 120px;
+}
+.author{
+    width: 1020px;
+    height: 341px;
+    background-color: #2eb398;
+}
+.author div{
+    display: inline-block;
+}
+.about{
+    float: right;
+    margin-right: 120px;
+    position: relative;
+    top: 68px;
+}
+.author h2{
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    margin-left: 19px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.author h3{
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+    margin-left: 21px;
+    margin-bottom: 19px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 19px;
+}
+.author p{
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    width: 581px;
+    height: 76px;
+    margin-left: 19px;
+}
+.social{
+    margin-left: 750px;
+    margin-top: 40px;
+}
+.social a{
+    margin-right: -4px;
+    opacity: 0.8;
+}
+.get-in-touch{
+    width: 1020px;
+    height: 564px;
+    background-color: #323232;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+.get-in-touch h3{
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+}
+.get-in-touch p{
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+fieldset{
+    border: 0;  
+    padding-block-start: 0;
+    padding-inline-start: 0;
+}
+fieldset input{
+   width: 580px;
+   height: 38px; 
+   background-color: #454545;
+   font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+   font-size: 12px;
+   color: rgba(190, 190, 190, 255);
+   text-align: justify;
+   margin-bottom: 16px;
+   padding-left: 15px;
+   border: 0;
+}
+fieldset textarea{
+   width: 580px;
+   height: 150px; 
+   background-color: #454545;
+   font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+   font-size: 12px;
+   color: rgba(190, 190, 190, 255);
+   text-align: justify;
+   padding-left: 15px;
+   padding-top: 13px;
+   border: 0;
+}
+.get-in-touch button{
+    width: 90px;
+    height: 37px; 
+    background-color: #2eb398;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    left: 505px;
+}
+.get-in-touch div{
+    display: inline-block;
+    position: relative;
+    top: 67px;
+}
+aside{
+    float: right;
+    width: 180px;
+    height: 117px;
+    margin-right: 120px;
+    margin-top: 1px;
+}
+#aside{
+    font-family: Lato-Black, Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;  
+    position: relative;
+    top: -320px;
+    left: 20px;
+}
+#icons{
+    position: relative;
+    left: 20px;
+    top: -259px;
+}
+#icons img{
+    display: block;
+    margin-bottom: 12px;
+}
+#contacts{
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    position: relative;
+    top: -334px;
+    left: 48px;
+    line-height: 1.9;
+}
+#contacts a{
+    text-decoration: none;
+}
+footer{
+    width: 1020px;
+    height: 43px;
+    background-color: #222222;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.65655px;
+    color: rgba(69, 69, 69, 255);
+    text-align: justify;
+    padding-left: 39px;
+    box-sizing: border-box;
+}
+footer p{
+    line-height: 43px;
+}
